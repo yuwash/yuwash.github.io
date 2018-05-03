@@ -1,12 +1,16 @@
 {% extends "base.html" %}
 
 {% block body %}
+{% load markup %}
 <div class="jumbotron">
   <div class="container">
-    <h1>Hello, I’m Yushin!</h1>
-    <p>I’m mostly hacking in python or bash to automate one chore at a
-    time. Also, I’m all in for any project to save resources and the
-    environment!</p>
+    {% filter markdown %}
+# Hello, I’m Yushin!
+
+I’m mostly hacking in python or bash to automate one chore at a
+time. Also, I’m all in for any project to save resources and the
+environment!
+    {% endfilter %}
   </div>
 </div>
 
@@ -14,56 +18,63 @@
   <div class="row">
 
     <div class="col-lg-3">
-      <h2>Tools I love</h2>
-      <p>
-        <ul>
-	  <li><a href="https://git-scm.com">Git</a>: You should always
-            use it. Better than any messy backup.</li>
-          <li><a href="">Vim</a>: Yeah, it’s still great. Use a
-            <a href="https://github.com/VundleVim/Vundle.vim">plugin manager</a>
-            to get the most out of it.</li>
-	  <li><a href="https://pandoc.org">Pandoc</a>: this is really a
-            reliable Swiss Army’s Knife for any document</li>
-	  <li><a href="https://github.com/tesseract-ocr/tesseract">Tesseract</a>:
-            Thanks for open sourcing the great OCR!</li>
-	  <li><a href="https://docker.com">Docker</a>: finally getting
-            the same results everywhere!</li>
-	</ul>
-      </p>
+      {% filter markdown %}
+## Tools I love
+* [Git](https://git-scm.com): You should always
+  use it. Better than any messy backup.
+* [Vim](): Yeah, it’s still great. Use a
+  [plugin manager](https://github.com/VundleVim/Vundle.vim)
+  to get the most out of it.
+* [Pandoc](https://pandoc.org): this is really a
+  reliable Swiss Army’s Knife for any document
+* [Tesseract](https://github.com/tesseract-ocr/tesseract):
+  Thanks for open sourcing the great OCR!
+* [Docker](https://docker.com): finally getting
+  the same results everywhere!
+      {% endfilter %}
    </div>
 
     <div class="col-lg-3">
-      <h2>Tools I’m still looking for</h2>
-      <ul>
-        <li>A <strong>transparent</strong> system to manage
-          distributed copies/backups of mixed files</li>
-        <li>A <strong>quick</strong> way to automate repetitive web
-          browser tasks</li>
-        <li>A <strong>reliable</strong> way to backup and transfer
-          emails</li>
-        <li>A <strong>good</strong> TTS engine</li>
-        <li>A <strong>mature</strong> editor for office documents, or
-          a good library for that</li>
-      </ul>
+      {% filter markdown %}
+## Tools I’m still looking for
+* A **transparent** system to manage
+  distributed copies/backups of mixed files
+* A **quick** way to automate repetitive web
+  browser tasks
+* A **reliable** way to backup and transfer
+  emails
+* A **good** TTS engine
+* A **mature** editor for office documents, or
+  a good library for that
+      {% endfilter %}
     </div>
 
     <div class="col-lg-3">
-      <h2>Coding</h2>
-      <p>Go ahead to my
-      <a href="https://github.com/yuwash">GitHub profile</a></p>
-      <h2>Elsewhere</h2>
-      <p>Come over to <a href="https://diasp.eu/people/89ec012b5d03f561">Diaspora*</a>
-      <p>Tweet me something <a href="//twitter.com/yuwasheu">@yuwasheu</a></p>
+      {% filter markdown %}
+## Coding
+
+Go ahead to my
+[GitHub profile](https://github.com/yuwash)
+
+## Elsewhere
+
+Come over to [Diaspora*](https://diasp.eu/people/89ec012b5d03f561)
+
+Tweet me something [@yuwasheu](//twitter.com/yuwasheu)
+      {% endfilter %}
     </div>
 
     <div class="col-lg-3">
-      <h2>This lil’ page</h2>
-      <p>was made with the amazing static site generator
-      <a href="https://github.com/eudicots/Cactus">Cactus</a>, using a
-      theme made with <a href="http://paintstrap.com/">Paintstrap</a>
-      based on
-      <a href="http://www.colourlovers.com/palette/3077120/Confetti_for_300!">"Confetti for 300!"</a>
-      palette</p>
+      {% filter markdown %}
+## This lil’ page
+
+was made with the amazing static site generator
+[Cactus](https://github.com/eudicots/Cactus), using a
+theme made with [Paintstrap](http://paintstrap.com/)
+based on
+["Confetti for 300!"](http://www.colourlovers.com/palette/3077120/Confetti_for_300!)
+palette
+      {% endfilter %}
    </div>
 
   </div>
