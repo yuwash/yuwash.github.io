@@ -1,0 +1,20 @@
+{
+  "name": "yuwash.github.io",
+  "version": "2.0.0",
+  "description": "user page",
+  "main": "eleventy.config.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuwash/yuwash.github.io.git"
+  },
+  "author": "Yushin Washio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuwash/yuwash.github.io/issues"
+  },
+  "homepage": "https://yuwash.eu",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

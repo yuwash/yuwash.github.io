@@ -3,19 +3,19 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>{{ title }}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="{% static '/static/css/bootstrap.css' %}">
+        <link rel="stylesheet" href="/css/bootstrap.css">
         <style>
             body {
                 padding-top: 50px;
                 padding-bottom: 20px;
             }
         </style>
-        <link rel="stylesheet" href="{% static '/static/css/main.css' %}">
-        <script src="{% static '/static/js/vendor/modernizr-2.6.2.js' %}"></script>
+        <link rel="stylesheet" href="/css/main.css">
+        <script src="/js/vendor/modernizr-2.6.2.js"></script>
     </head>
 
     <body>
@@ -27,7 +27,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{% url "/index.html" %}">yuwash</a>
+          <a class="navbar-brand" href="/">yuwash</a>
         </div>
       </div>
     </div>
@@ -35,9 +35,9 @@
     {% block body %}
     {% endblock %}
 
-    <script src="{% static '/static/js/vendor/jquery-1.10.1.js' %}"></script>
-    <script src="{% static '/static/js/vendor/bootstrap.js' %}"></script>
-    <script src="{% static '/static/js/main.js' %}"></script>
+    <script src="/js/vendor/jquery-1.10.1.js"></script>
+    <script src="/js/vendor/bootstrap.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 
   {% block scripts %}

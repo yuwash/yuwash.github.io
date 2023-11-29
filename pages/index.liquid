@@ -1,16 +1,18 @@
-{% extends "base.html" %}
+---
+title: yuwash
+---
+{% layout "base" %}
 
 {% block body %}
-{% load markup %}
 <div class="jumbotron">
   <div class="container">
-    {% filter markdown %}
+{% renderTemplate "md" %}     
 # Hello, I’m Yushin!
 
 I’m mostly hacking in python or bash to automate one chore at a
 time. Also, I’m all in for any project to save resources and the
 environment!
-    {% endfilter %}
+{% endrenderTemplate %}
   </div>
 </div>
 
@@ -18,7 +20,7 @@ environment!
   <div class="row">
 
     <div class="col-lg-3">
-      {% filter markdown %}
+{% renderTemplate "md" %}
 ## Tools I love
 * [Git](https://git-scm.com): You should always
   use it. Better than any messy backup.
@@ -31,11 +33,11 @@ environment!
   Thanks for open sourcing the great OCR!
 * [Docker](https://docker.com): finally getting
   the same results everywhere!
-      {% endfilter %}
+{% endrenderTemplate %}
    </div>
 
     <div class="col-lg-3">
-      {% filter markdown %}
+{% renderTemplate "md" %}     
 ## Tools I’m still looking for
 * A **transparent** system to manage
   distributed copies/backups of mixed files
@@ -46,11 +48,11 @@ environment!
 * A **good** TTS engine
 * A **mature** editor for office documents, or
   a good library for that
-      {% endfilter %}
+{% endrenderTemplate %}
     </div>
 
     <div class="col-lg-3">
-      {% filter markdown %}
+{% renderTemplate "md" %}     
 ## Coding
 
 Go ahead to my
@@ -61,11 +63,11 @@ Go ahead to my
 Come over to [Diaspora*](https://diasp.eu/people/89ec012b5d03f561)
 
 Tweet me something [@yuwasheu](//twitter.com/yuwasheu)
-      {% endfilter %}
+{% endrenderTemplate %}
     </div>
 
     <div class="col-lg-3">
-      {% filter markdown %}
+{% renderTemplate "md" %}     
 ## This lil’ page
 
 was made with the amazing static site generator
@@ -74,7 +76,7 @@ theme made with [Paintstrap](http://paintstrap.com/)
 based on
 ["Confetti for 300!"](http://www.colourlovers.com/palette/3077120/Confetti_for_300!)
 palette
-      {% endfilter %}
+{% endrenderTemplate %}
    </div>
 
   </div>
