@@ -3,7 +3,9 @@
   "version": "2.0.0",
   "description": "user page",
   "main": "eleventy.config.js",
-  "scripts": {},
+  "scripts": {
+    "build": "eleventy"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yuwash/yuwash.github.io.git"
