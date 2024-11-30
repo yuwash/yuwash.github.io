@@ -4,19 +4,14 @@
    Author's custom styles
    ========================================================================== */
 
+span.replace-at {
+    /* The span element contains some garbage obfuscation content to be hidden. */
+    visibility: hidden;
+    font-size: 0;  /* Remove the blank space */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+span.replace-at::before {
+    content: "@";
+    visibility: visible;
+    font-size: initial;
+}
