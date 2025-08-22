@@ -24,6 +24,17 @@
         <div class="navbar-header">
           <a class="navbar-brand" href="/"><strong>@yuwash</strong> Yushin Washio</a>
         </div>
+        {% comment %} The following doesn’t work (maybe content not set):
+        {{ content | toc | safe }}
+        Therefore hardcoding for now.
+        {% endcomment %}
+        <ul class="nav navbar-nav">
+          <li><a href="#little-apps">Little apps</a></li>
+          <li><a href="#values">Values</a></li>
+          <li><a href="#what-i-do">What I do</a></li>
+          <li><a href="#let%E2%80%99s-get-in-touch">Let’s get in touch</a></li>
+          <li><a href="#what%E2%80%99s-new%2Fwhere-to-find-me">What’s new/Where to find me</a></li>
+        </ul>
       </div>
     </div>
 
