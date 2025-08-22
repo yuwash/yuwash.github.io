@@ -9,7 +9,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.setLibrary(
     'md',
-    markdownIt().use(markdownItAnchor)
+    markdownIt({ html: true }).use(markdownItAnchor)
   );
   eleventyConfig.addPlugin(pluginTOC);
 
