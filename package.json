@@ -4,7 +4,8 @@
   "description": "user page",
   "main": "eleventy.config.js",
   "scripts": {
-    "build": "eleventy"
+    "build": "eleventy",
+    "dev": "eleventy --serve"
   },
   "repository": {
     "type": "git",
