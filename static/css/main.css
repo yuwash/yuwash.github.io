@@ -32,11 +32,12 @@ span.replace-at::before {
             transparent 15px,
             transparent 45px
         ),
-        /* Layer 3: Peach/Grey Base */
+        /* Layer 3: Peach Stripes */
         repeating-linear-gradient(135deg,
-            #f8b29b 0px,
-            #f8b29b 15px,
-            #eeeeee 15px,
-            #eeeeee 45px
+            rgba(248, 178, 155, 0.5) 0px,
+            rgba(248, 178, 155, 0.5) 15px,
+            transparent 15px,
+            transparent 45px
         );
+    background-color: #eeeeee;
 }
