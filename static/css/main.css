@@ -15,3 +15,28 @@ span.replace-at::before {
     visibility: visible;
     font-size: initial;
 }
+
+.stripe-background {
+    background-image:
+        /* Layer 1: Light Green Stripes */
+        repeating-linear-gradient(75deg,
+            rgba(215, 242, 166, 0.5) 0px,
+            rgba(215, 242, 166, 0.5) 30px,
+            transparent 30px,
+            transparent 45px
+        ),
+        /* Layer 2: Green Stripes */
+        repeating-linear-gradient(15deg,
+            rgba(151, 212, 37, 0.5) 0px,
+            rgba(151, 212, 37, 0.5) 15px,
+            transparent 15px,
+            transparent 45px
+        ),
+        /* Layer 3: Peach/Grey Base */
+        repeating-linear-gradient(135deg,
+            #f8b29b 0px,
+            #f8b29b 15px,
+            #eeeeee 15px,
+            #eeeeee 45px
+        );
+}
