@@ -1,8 +1,14 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+:root {
+  --bulma-link-text: #D6410F;
+  --bulma-success-h: 81deg;
+  --bulma-text-strong: #631900;
+  --bulma-text: #631900;
+  --bulma-link: #eee;  /* navbar burger */
+}
 
 span.replace-at {
     /* The span element contains some garbage obfuscation content to be hidden. */
